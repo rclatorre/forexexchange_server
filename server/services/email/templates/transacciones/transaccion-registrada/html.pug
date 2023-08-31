@@ -1,0 +1,107 @@
+  
+doctype html
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    title Transaccion registrada
+    style   
+        include ./style.css
+ 
+  body.color-secondary
+    div.center
+        div.body
+            div.container
+                table(style='width:100%')
+                    tbody
+                        tr
+                            td
+                                div.header
+                                    div.img
+                                        - var img = datosEmail.rutaLogotipos+'logo.png'
+                                        img.logo(src=img)
+                        tr
+                            td
+                                div.contenido
+                                    p.saludo Estimad@ #{datosEmail.nombre},
+
+                                    p.mensaje='Gracias por confiar en nosotros, te informamos que hemos recibido tu operación el : ' + moment(datosEmail.fechaHora).format("DD/MM/YYYY, h:mm:ss a") + ''
+                                    p.mensaje <strong>N° de Transacción: #{datosEmail.numeroTransaccion}</strong>
+                                    p.mensaje='Dispones de un máximo de '+ datosEmail.plazoTransaccion + ' minutos para realizar tu transferencia y así mantener el tipo de cambio pactado.'
+
+                                    div.datos
+                                        p.titulo ¿Qué sigue?
+
+                                        p.mensaje Paso 2
+                                        p.mensaje <u>Realiza una transferencia</u> a la cuenta de <strong>#{datosEmail.razonSocial}</strong> desde tu banca en línea del #{datosEmail.bancoOrigenCliente} y luego envíanos la constancia o número de operación que te proporciona el banco.
+                                        p.dato <em>Transfieres</em> #{datosEmail.transferenciaDe.cantidadDe} #{datosEmail.transferenciaDe.monedaDe} ( Desde tu cuenta #{datosEmail.bancoOrigenCliente} )
+
+                                        p.mensaje Nuestra Cuenta
+                                        p.dato <em>Entidad Bancaria</em> #{datosEmail.transferenciaDe.bancoDestinoPropio}
+                                        p.dato <em>Titular de la Cuenta</em> #{datosEmail.transferenciaDe.titularDestinoPropio}
+                                        p.dato <em>RUC</em> #{datosEmail.transferenciaDe.documentoIdentidadDestinoPropio}
+                                        p.dato <em>Tipo de Cuenta</em> #{datosEmail.transferenciaDe.tipoDeCuentaDestinoPropio}
+
+                                        if datosEmail.transferenciaDe.tipoTransferenciaDe === 'TipoTransferenciaMismoBanco'
+                                            p.dato <em>Número de Cuenta</em> #{datosEmail.transferenciaDe.numeroDeCuentaDestinoPropio}
+                                        else
+                                            p.dato <em>Codigo de Cuenta Interbancario</em>  #{datosEmail.transferenciaDe.numeroDeCCIDestinoPropio}
+                                            p.mensaje Tener en cuenta que las transferencia interbancarias pueden estar sujetas a comisiones que deberas asumir
+ 
+                                        p.mensaje <strong>#{datosEmail.transferenciaDe.mensajeDestinoPropio} #{datosEmail.transferenciaDe.emailConstancia}</strong>
+
+                                    div.datos_complementarios
+                                        p.titulo ¡ Finalmente !
+                                        p.mensaje Luego de que validemos la constancia de transferencia que nos envies, procederemos a realizar el abono en tu cuenta
+                                        p.dato <em>Recibes</em> #{datosEmail.transferenciaA.cantidadA} #{datosEmail.transferenciaA.monedaA}
+
+                                        p.mensaje Tu Cuenta
+                                        p.dato <em>Entidad Bancaria</em> #{datosEmail.transferenciaA.bancoDestinoCliente}
+                                        p.dato <em>Titular de la Cuenta</em> #{datosEmail.transferenciaA.titularDestinoCliente}
+                                        p.dato <em>Documento de Identidad </em>#{datosEmail.transferenciaA.documentoIdentidadDestinoCliente}
+                                        p.dato <em>Tipo de Cuenta</em> #{datosEmail.transferenciaA.tipoDeCuentaDestinoCliente}
+
+                                        if datosEmail.transferenciaA.tipoTransferenciaA === 'TipoTransferenciaMismoBanco'
+                                            p.dato <em>Número de Cuenta</em> #{datosEmail.transferenciaA.numeroDeCuentaDestinoCliente}
+                                        else
+                                            p.dato <em>Número de Cuenta</em> #{datosEmail.transferenciaA.numeroDeCuentaDestinoCliente}
+                                            p.dato <em>Codigo de Cuenta Interbancario</em> #{datosEmail.transferenciaA.numeroDeCCIDestinoCliente}
+                                            p.mensaje Tener en cuenta que las transferencia interbancarias pueden estar sujetas a comisiones que deberas asumir
+
+                                    div.datos_complementarios
+                                        p.mensaje Datos Adicionales
+                                        p.dato <em>#{datosEmail.tipoDocumentoIdentidad}</em> #{datosEmail.numeroDocumentoIdentidad}
+                                        p.dato <em>Nombre</em> #{datosEmail.nombreCompleto}
+
+                                        if datosEmail.ocupacion !== '' 
+                                            p.dato <em>Ocupacion</em> #{datosEmail.ocupacion}
+                                        if datosEmail.funcionPublica !== '' 
+                                            p.dato <em>PEP </em>#{datosEmail.funcionPublica}
+                                        if datosEmail.cargoFuncionPublica !== '' 
+                                            p.dato <em>Cargo (PEP)</em> #{datosEmail.cargoFuncionPublica}
+                                        if datosEmail.institucionFuncionPublica !== '' 
+                                            p.dato <em>Institucion (PEP)</em> #{datosEmail.institucionFuncionPublica}
+                                        if datosEmail.origenDeFondos !== '' 
+                                            p.dato <em>Origen de los Fondos</em> #{datosEmail.origenDeFondos}
+        
+
+
+                                    div.importante
+                                        p.titulo Importante
+                                        p.mensaje No se aceptan depósitos en efectivo en nuestras cuentas, solo transferencias bancarias
+                                        p.mensaje='Para provincias aceptamos transferencias solo '+ datosEmail.bancosProvincia + ' realizadas via Banca En Linea (evitando la comision interplaza)'
+                                        p.mensaje Horario de atención: #{datosEmail.horarioAtencion} , atenciones fuera de ese horario serán realizadas a la apertura del siguiente dia útil.
+
+                        tr
+                            td
+                                div.footer
+                                    div.firma
+                                        p="EL EQUIPO DE "+ datosEmail.nombreComercial
+                                        p=datosEmail.urlPlataforma
+                                        p="T. "+datosEmail.telefono
+                                        p=datosEmail.emailTransacciones
+                                        p=datosEmail.direccion
+                                    
+
+
+
+

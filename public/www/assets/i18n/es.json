@@ -1,0 +1,294 @@
+{
+    "app.name": "Divisa",
+    "app.version": "2",
+    "app.description": "Especialistas en cambio de divisas",
+
+    "app.button.search": "Search",
+    "app.button.checkout": "Checkout",
+    "app.button.booknow": "Book Now",
+    "app.button.callus": "Call us",
+    "app.button.fav": "Favorite",
+    "app.button.share": "Share",
+    "app.button.signin": "Ingresar",
+    "app.button.signup": "Crea tu cuenta",
+    "app.button.change": "Cambiar Ahora",
+    "app.button.close": "Cerrar",
+
+    "app.label.booked": "Booked",
+    "app.label.book": "Book",
+    "app.label.resultsf": "Results Found!",
+    "app.label.cc": "Credit Card",
+    "app.label.ch": "Card Holder",
+    "app.label.cn": "Card Number",
+    "app.label.pp": "Paypal",
+    "app.label.freecancel": "free cancellation",
+    "app.label.average": "Average",
+    "app.label.averageprice": "average price",
+    "app.label.totalvat": "Total + VAT",
+    "app.label.total": "Total",
+    "app.label.voucher": "Voucher",
+    "app.label.description": "Description",
+    "app.label.location": "Location",
+    "app.label.reserve": "Reserve",
+    "app.label.passengers": "Passengers",
+    "app.label.doors": "Doors",
+    "app.label.remove": "Remove",
+    "app.label.adult": "Adult",
+    "app.label.child": "Child",
+    "app.label.guests": "Guests",
+    "app.label.otherguests": "Other Guests",
+    "app.label.nights": "Nights",
+    "app.label.days": "Days",
+    "app.label.daily": "Daily",
+    "app.label.userdata": "User Data",
+    "app.label.usertype": "User Type",
+    "app.label.edit": "Editar",
+    "app.label.insertavatar": "Insert Avatar",
+    "app.label.name": "Nombre",
+    "app.label.fullname": "Nombre Completo",
+    "app.label.firstname": "Nombres",
+    "app.label.lastname": "Apellidos",
+    "app.label.address": "Direccion",
+    "app.label.city": "Ciudad",
+    "app.label.state": "Estado",
+    "app.label.email": "Correo Electrónico",
+    "app.label.password": "Contraseña",
+    "app.label.details": "Details",
+    "app.label.rooms": "Rooms",
+    "app.label.rating": "Rating",
+    "app.label.about": "About",
+    "app.label.amenities": "Amenities",
+    "app.label.features": "Features",
+    "app.label.availrooms": "Available rooms",
+    "app.label.selectlocal": "Select Local",
+    "app.label.banco": "Banco",
+
+    "app.label.errors.field": "Este campo es requerido",
+
+    "app.pages.extras.title.header": "Extras pages",
+    "app.pages.extras.profileone.title.header": "Profile One",
+    "app.pages.extras.profiletwo.title.header": "Profile Two",
+    "app.pages.extras.timeline.title.header": "Timeline",
+    "app.pages.extras.auth.title.header": "Authentication",
+    "app.pages.extras.popupmenu.title.header": "Popup menu",
+    "app.pages.extras.charts.title.header": "Charts",
+    "app.pages.extras.post.title.header": "Blog Post",
+
+    "app.pages.menu.home": "Home",
+    "app.pages.menu.booking": "Booking List",
+    "app.pages.menu.favorites": "Favorites",
+    "app.pages.menu.rentacar": "Rent a Car",
+    "app.pages.menu.activities": "Trip Activities",
+    "app.pages.menu.activitiestab": "Activities",
+    "app.pages.menu.logout": "Salir",
+    "app.pages.menu.editprofile": "Editar Perfil",
+    "app.pages.menu.weather": "Local Weather",
+    "app.pages.menu.about": "About App",
+    "app.pages.menu.settings": "Settings",
+    "app.pages.menu.support": "Support",
+
+    "app.pages.home.label.checkin": "Check-in",
+    "app.pages.home.label.checkout": "Check-out",
+    "app.pages.home.label.rooms": "Rooms",
+    "app.pages.home.label.adults": "Adults",
+    "app.pages.home.label.children": "Children",
+    "app.pages.home.label.child": "Child",
+    "app.pages.home.label.childage": "Child's age",
+    "app.pages.home.label.childrenages": "Children's ages",
+    "app.pages.home.label.pamenities": "Preferred Amenities",
+    "app.pages.home.label.availrooms": "Available rooms",
+
+    "app.pages.home.title.recommended": "Recommended Hotels",
+    "app.pages.home.title.latestbookings": "Latest Bookings",
+    "app.pages.home.title.nearyou": "Hotels Near you",
+
+
+    "app.pages.about.title.header": "About",
+
+    "app.pages.activities.title.header": "Trip Activities",
+
+    "app.pages.activitycheck.title.header": "Activity Checkout",
+
+    "app.pages.activitydetail.title.header": "Activity Detail",
+
+    "app.pages.activitylist.title.header": "Activity List",
+
+    "app.pages.bookinglist.title.header": "Booking List",
+    "app.pages.bookinglist.title.nores": "You have no bookings yet.",
+
+    "app.pages.carcheckout.title.header": "Car Checkout",
+
+    "app.pages.cardetail.title.header": "Car Shop Detail",
+    "app.pages.cardetail.label.autotransmission": "Automatic transmission",
+    "app.pages.cardetail.label.manualtransmission": "Manual transmission",
+
+    "app.pages.carlist.title.header": "Car List",
+
+    "app.pages.editprofile.title.header": "Edit Profile",
+    "app.pages.editprofile.avail.text": "Available to chat w/ Travel Agents?",
+
+    "app.pages.favorites.title.header": "Favorites",
+    "app.pages.favorites.title.nores": "You have no favorite hotels.",
+
+    "app.pages.hotelcheckout.title.header": "Hotel Checkout",
+
+    "app.pages.hotellist.title.header": "Hotel List",
+
+    "app.pages.localweather.title.header": "Local Weather",
+    "app.pages.localweather.label.temp": "Temperature",
+    "app.pages.localweather.label.humidity": "Humidity",
+    "app.pages.localweather.label.dewpoint": "Dewpoint",
+    "app.pages.localweather.label.visibility": "Visibility",
+    "app.pages.localweather.label.heatindex": "Heat Index",
+
+
+
+
+    "app.pages.login.label.forgot": "Olvidaste tu contraseña?",
+    "app.pages.login.text.forgot": "Ingresa tu correo electronico para enviarte un enlace para que lo cambies.",
+    "app.pages.login.text.sended": "Correo electronico fue enviado exitosamente.",
+
+    "app.pages.login.label.newhere": "Eres nuevo aqui?",
+    "app.pages.login.label.orsigninwith": "O ingresa con:",
+    "app.pages.login.label.welcome": "Bienvenido a",
+    "app.pages.login.label.welcomemessage": "Ingresa y cambia tus divisas rapido y seguro",
+    "app.pages.login.label.welcomemessageregister": "Crea tu cuenta rapidamente y empieza a cambiar tus divisas",
+
+    "app.pages.register.label.orsignupwith": "O crea tu cuenta con:",
+    "app.pages.register.label.ihaveanaccount": "Ya tengo una cuenta!",
+
+    "app.pages.transaction.label.title": "Transaction Nueva",
+    "app.pages.transaction.label.tengo": "¿Que moneda tienes?",
+    "app.pages.transaction.label.quiero": "¿Que moneda quieres?'",
+    "app.pages.transaction.label.welcome": "La forma mas facil de cambiar tus dólares comodamente desde donde estes",
+    "app.pages.transaction.label.welcome-txt": "Transfiere o tambien cambia tu dinero en efectivo en cualquiera de nuestras agencias",
+    "app.pages.transaction.label.welcomeback": "Bienvenido de nuevo",
+    "app.pages.transaction.label.welcomenew": "Cambia tus Divisas Online",
+
+    "app.pages.transaction.label.paymentmethod": "Metodo de Pago",
+    "app.pages.transaction.label.reviewandconfirm": "Resumen de la transaccion",
+    "app.pages.transaction.label.pickup": "Opcion de Entrega",
+    "app.pages.transaction.label.rate": "Cotizacion",
+    "app.pages.transaction.label.opcionentrega": "¿Transferencia o efectivo?",
+    "app.pages.transaction.label.opcionentrega_old": "Realice la transaccion por transferencias bancarias o acerquese a  una de nuestras agencias",
+
+    "app.pages.transaction.label.paymentdescription": "Transfiera desde una de sus cuentas o pague en efectivo en nuestras tiendas.",
+
+    "app.pages.transaction.label.elijaopcion": "Elija la opcion",
+    "app.pages.transaction.label.ciudad": "Ciudad",
+    "app.pages.transaction.label.importepagar": "Importe que debe Transferir",
+    "app.pages.transaction.label.importerecibir": "Importe que Recibira",
+    "app.pages.transaction.label.datos": "Tus Datos",
+    "app.pages.transaction.label.textodatos": "Necesitamos tu información personal, estos datos los pediremos solo cuando realices tu primera orden",
+    "app.pages.transaction.label.tipodocumento": "Tipo de Documento",
+    "app.pages.transaction.label.numerodocumento": "Numero de Documento",
+    "app.pages.transaction.label.eresusuario": "¿Ya eres usuario?",
+    "app.pages.transaction.label.ultimatransaccion": "Transaccion Registrada",
+    "app.pages.transaction.label.ultimatransacciontext": "Tu transaccion ha sido registrada correctamente, hemos enviado informacion relevante a tu correo electronico",
+    "app.pages.transaction.label.numerotransaccion": "Numero de Transaccion",
+    "app.pages.transaction.label.fechayhora": "Fecha y Hora de Registro",
+    "app.pages.transaction.label.empresa": "Razón Social",
+
+    "app.pages.transaction.label.transferencia": "Datos para la Transferencia",
+    "app.pages.transaction.label.transferenciadescription": "Indica la cuenta desde la que enviara el importe a cambiar y la cuenta en la cual recibira el cambio",
+    "app.pages.transaction.label.transferenciacuentaorigen": "Voy a transferir desde la siguiente cuenta",
+    "app.pages.transaction.label.transferenciacuentaorigendescripcion": "Seleccona la cuenta desde la cual transferiras",
+    "app.pages.transaction.label.transferenciacuentadestino": "Quiero recibir en la siguiente cuenta los",
+    "app.pages.transaction.label.transferenciacuentadestinodescripcion": "Selecciona la cuenta donde recibira su transferencia",
+    "app.pages.transaction.label.destinotransaccion": "¿Cambiar como persona o empresa?",
+    "app.pages.transaction.label.destinotransaccion_old": "Indica para quien es esta transaccion",
+
+    "app.pages.transaction.label.moneda": "Moneda",
+    "app.pages.transaction.label.tipocuenta": "Tipo de Cuenta",
+    "app.pages.transaction.label.numerocuenta": "Numero de Cuenta",
+    "app.pages.transaction.label.confirmanos": "confirmanos tus datos para completar la operación",
+
+
+
+
+
+
+    "app.pages.transaction.button.reviewandconfirm": "Revisar y Confirmar",
+    "app.pages.transaction.button.finish": "Registrar Pedido",
+    "app.pages.transaction.button.registro": "Registrarse",
+    "app.pages.transaction.button.back": "Atras",
+    "app.pages.transaction.button.alinicio": "Ir al Inicio",
+
+    "app.tablas.metododepago.metododepagotarjeta": "Tarjeta de Credito/Debito",
+    "app.tablas.metododepago.metododepagopresencial": "Efectivo",
+
+    "app.tablas.opcionentrega.opcionentregatienda": "En Efectivo en Tienda",
+    "app.tablas.opcionentrega.opcionentregadelivery": "Entrega a Domicilio",
+    "app.tablas.opcionentrega.opcionentregatransferencia": "Transferencia Bancaria",
+
+    "app.tablas.destinoTransaccion.paraMi": "Personal",
+    "app.tablas.destinoTransaccion.paraMiEmpresa": "Empresa",
+
+
+
+
+
+    "app.button.login": "Ingresar",
+    "app.button.logout": "Salir",
+
+    "app.menu.home": "Inicio",
+    "app.menu.mytransactions": "Mis Transacciones",
+    "app.menu.about": "Nosotros",
+    "app.menu.support": "Soporte",
+    "app.menu.login": "Ingresar",
+
+    "app.modal.moneda.title": "Moneda",
+    "app.modal.empresa.title": "Empresa",
+    "app.modal.moneda.close": "Cerrar",
+    "app.modal.moneda.find": "Buscar",
+
+    "app.section.service.title": "La mejor alternativa para cambiar divisas en España",
+    "app.section.service.experiencia.title": "Experiencia",
+    "app.section.service.experiencia.text": "Nuestra amplia experiencia en el rubro de cambio de divisas nos ubica en una de las mejores casas de cambio en Lima ",
+    "app.section.service.servicio.title": "Servicio",
+    "app.section.service.servicio.text": "Contamos con diversos servicios en nuestra agencia cambiaria. Ahora tambien con un exclusivo servicio de cambio en linea!",
+    "app.section.service.multiples.title": "Agencias",
+    "app.section.service.multiples.text": "Nuestra agencia esta ubicada en Lima, te esperamos en nuestros horarios de atencion si prefieres hacerlo personalmente!",
+    "app.section.service.alternativa.title": "Seguridad",
+    "app.section.service.alternativa.text": "Nuestra garantia es la seguridad que todos nuestros clientes han depositado durante nuestra larga trayectoria cambiaria!",
+
+    "app.footer.resumen": "Somos especialistas en el cambio de divisas en Peru. Realice su cambio on line ahora y obtenga los beneficios de una tarifa preferencial!!",
+    "app.footer.email": "Correo:",
+    "app.footer.phone": "Telefono",
+
+    "app.footer.nosotros.title": "Nosotros",
+    "app.footer.nosotros.compania": "Compañia",
+    "app.footer.nosotros.registros": "Registros",
+
+    "app.footer.servicios.title": "Servicios",
+    "app.footer.servicios.cambio": "Cambio de Divisas",
+    "app.footer.servicios.pagos": "Pago de Servicios",
+
+    "app.footer.contacto.title": "Contacto",
+    "app.footer.contacto.dia_lv": "Lunes a Viernes: 8:30am - 8pm",
+    "app.footer.contacto.dia_s": "Sabados: 9am - 3pm",
+
+
+    "app.footer.terminos": "Terminos de Uso",
+    "app.footer.privacidad": "Politica de Privacidad",
+
+    "app.label.nodisponible": "temporalmente no disponible",
+
+    "app.label.primerapellido": "Primer Apellido",
+    "app.label.segundoapellido": "Segundo Apellido",
+    "app.label.datebirth": "Fecha de Nacimiento",
+    "app.label.phone": "Telefono",
+    "app.label.nacionalidad": "Nacionalidad",
+
+    "app.modal.pais.title": "Paises",
+    "app.modal.close": "Cerrar",
+    "app.modal.find": "Buscar",
+
+    "app.modal.banco.title": "Bancos",
+
+    "app.transaccion.alerta.recojoentiendainvalido": "Complete la informacion para el recojo en tienda",
+    "app.transaccion.alerta.transferenciainvalido": "Complete la informacion para realizar las transferencias",
+    "app.transaccion.alerta.registroinvalido": "Complete sus datos personales antes de continuar con la transaccion",
+    "app.transaccion.alerta.metododepagoinvalido": "Si la transaccion es para empresa debe seleccionar un registro"
+
+}

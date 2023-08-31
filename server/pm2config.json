@@ -1,0 +1,35 @@
+{ 
+ "apps": [{
+        "name": "ServerDivisa",
+        "script": "./server.js",
+        "env": {
+              "NODE_ENV": "prod",
+              "MONGO_URI": "mongodb+srv://moneyhouse:aXVxHLuXJoPVXSZK@cluster0.7hqtd.mongodb.net/divisa_moneyhouse?authSource=admin",
+              "RECAPTCHA_KEY": "6LeYTVYiAAAAAPdqOg6I7osy7rQ9Z_P0e2FugGQX",
+              "emailMessageFrom": "info@moneyhouse.com.pe",
+              "emailTransportHost": "c1661503.ferozo.com",
+              "emailTransportPort": 465, 
+              "emailTransportSecure": true,
+              "emailTransportAuthType": "login", 
+              "emailTransportAuthTUser": "info@moneyhouse.com.pe", 
+              "emailTransportAuthTPass": "Mnyhs2022@2", 
+              "emailTransportTlsRejectUnauthorized": false,
+              "emailViewsRoot": "/home/ubuntu/moneyhouse.com.pe/server/server/services/email/templates/",
+              "URLFront": "https://moneyhouse.com.pe",
+              "serverOptionsKey": "/etc/letsencrypt/live/divisaxone.com/privkey.pem",
+              "serverOptionsCert": "/etc/letsencrypt/live/divisaxone.com/fullchain.pem",
+              "TZ": "America/Lima",
+              "SEED_TOKEN": "este-es-el-seed-moneyhouse",
+              "ACUANTOESTAELDOLAR_URL_BASE" : "https://api.cuantoestaeldolar.pe/Api/Dolar",
+              "ACUANTOESTAELDOLAR_USUARIO": "update@moneyhouse.com.pe",
+              "ACUANTOESTAELDOLAR_PASSWORD": "QazBpu646T3"
+            },        
+            
+        "log_file": "/var/log/pm2/ServerDivisa.log",
+        "error_file": "/var/log/pm2/ServerDivisa-err.log",
+        "watch": true,
+        "ignore_watch" : [ "./log", "./node_modules","./.git", "./sessions","./sessions/*", "./private/files/**/*", "./private/imgs/**/*" ]
+         }]
+}
+
+

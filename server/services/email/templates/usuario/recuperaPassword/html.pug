@@ -1,0 +1,63 @@
+  
+doctype html
+html(lang="es")
+  head
+    meta(charset="UTF-8")
+    title Recupera Password
+    style   
+        include ./style.css
+ 
+  body.color-secondary
+    div.center
+        div.body
+            div.container
+                table(style='width:100%')
+                    tbody
+                        tr
+                            td
+                                div.header
+                                   div.img
+                                        - var img = datosEmail.rutaLogotipos+'logo.png'
+                                        img.logo(src=img)
+                        tr
+                            td
+                                div.contenido
+                                    p.saludo Estimad@ #{datosEmail.nombre},
+
+                                    p.mensaje='Hemos recibido una solicitud de recuperación de contraseña'
+
+                                    div.datos
+                                        p.titulo Para recuperar tu contraseña pulsa el siguiente botón:
+                                        - var btnType = 'info'
+                                        - var btnSize = 'lg'
+                                        button(type='button' class='btn btn-' + btnType + ' btn-' + btnSize + ' color-primary-bg')
+                                            a.color-light(href=datosEmail.enlace, title="Recuperar contraseña") Recuperar contraseña
+
+
+                                    div.datos_complementarios
+                                        p.titulo Si el botón superior no funciona, copia este texto en tu navegador web:
+                                        p.mensaje #{datosEmail.enlace}
+
+
+                        tr
+                            td
+                                div.footer
+                                    div.firma
+                                        p="EL EQUIPO DE "+ datosEmail.nombreComercial
+                                        p=datosEmail.urlPlataforma
+                                        p="T. "+datosEmail.telefono
+                                        p=datosEmail.emailTransacciones
+                                        p=datosEmail.direccion
+
+                                    
+
+
+
+
+
+
+
+
+
+
+

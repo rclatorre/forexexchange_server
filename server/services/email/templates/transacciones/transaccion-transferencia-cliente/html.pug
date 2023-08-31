@@ -1,0 +1,83 @@
+  
+doctype html
+html(lang="es")
+  head 
+    meta(charset="UTF-8")
+    title Transferencia Propia Realizada
+    style   
+        include ./style.css
+ 
+  body.color-secondary
+    div.center
+        div.body
+            div.container
+                table(style='width:100%')
+                    tbody
+                        tr
+                            td
+                                div.header
+                                   div.img
+                                        - var img = datosEmail.rutaLogotipos+'logo.png'
+                                        img.logo(src=img)
+                        tr
+                            td
+                                div.contenido
+                                    p.saludo Estimad@ #{datosEmail.nombre},
+
+                                    p.mensaje='Hemos recibido tu constancia de transferencia el : ' + moment(datosEmail.fechaHora).format("DD/MM/YYYY, h:mm:ss a") + ' para la transaccion:'
+                                    p.mensaje <strong>N° de Transaccion: #{datosEmail.numeroTransaccion}</strong>
+                                    p.mensaje <strong>N° de Operación: #{datosEmail.transferenciaDe.numeroOperacionOrigen}</strong> 
+
+                                    div.datos
+                                        p.titulo ¿Qué sigue?
+                                        p.mensaje Paso 3
+                                        p.mensaje='Dentro de los proximos '+ datosEmail.plazoTransaccion + ' minutos realizaremos la verificacion de tu transferencia y el abono correspondiente a tu cuenta.'
+                                        p.dato <em>Transfieres</em> #{datosEmail.transferenciaDe.cantidadDe} #{datosEmail.transferenciaDe.monedaDe} ( Desde tu cuenta #{datosEmail.bancoOrigenCliente} )
+
+                                        p.mensaje Nuestra Cuenta
+                                        p.dato <em>Entidad Bancaria</em> #{datosEmail.transferenciaDe.bancoDestinoPropio}
+                                        p.dato <em>Titular de la Cuenta</em> #{datosEmail.transferenciaDe.titularDestinoPropio}
+                                        p.dato <em>RUC</em> #{datosEmail.transferenciaDe.documentoIdentidadDestinoPropio}
+                                        p.dato <em>Tipo de Cuenta</em> #{datosEmail.transferenciaDe.tipoDeCuentaDestinoPropio}
+
+                                        if datosEmail.transferenciaDe.tipoTransferenciaDe === 'TipoTransferenciaMismoBanco'
+                                            p.dato <em>Número de Cuenta</em> #{datosEmail.transferenciaDe.numeroDeCuentaDestinoPropio}
+                                        else
+                                            p.dato <em>Codigo de Cuenta Interbancario</em>  #{datosEmail.transferenciaDe.numeroDeCCIDestinoPropio}
+                                            p.mensaje Tener en cuenta que las transferencia interbancarias pueden estar sujetas a comisiones que deberas asumir
+                
+                                    div.datos_complementarios
+                                        p.titulo ¡ Falta poco para que tengas tu dinero !
+                                        p.mensaje Luego de que validemos la constancia de transferencia que nos enviaste, procederemos a realizar el abono en tu cuenta
+                                        p.dato <em>Recibes</em> #{datosEmail.transferenciaA.cantidadA} #{datosEmail.transferenciaA.monedaA}
+
+                                        p.mensaje Tu Cuenta
+                                        p.dato <em>Entidad Bancaria</em> #{datosEmail.transferenciaA.bancoDestinoCliente}
+                                        p.dato <em>Titular de la Cuenta</em> #{datosEmail.transferenciaA.titularDestinoCliente}
+                                        p.dato <em>Documento de Identidad </em>#{datosEmail.transferenciaA.documentoIdentidadDestinoCliente}
+                                        p.dato <em>Tipo de Cuenta</em> #{datosEmail.transferenciaA.tipoDeCuentaDestinoCliente}
+
+                                        if datosEmail.transferenciaA.tipoTransferenciaA === 'TipoTransferenciaMismoBanco'
+                                            p.dato <em>Número de Cuenta</em> #{datosEmail.transferenciaA.numeroDeCuentaDestinoCliente}
+                                        else
+                                            p.dato <em>Número de Cuenta</em> #{datosEmail.transferenciaA.numeroDeCuentaDestinoCliente}
+                                            p.dato <em>Codigo de Cuenta Interbancario</em> #{datosEmail.transferenciaA.numeroDeCCIDestinoCliente}
+                                            p.mensaje Tener en cuenta que las transferencia interbancarias pueden estar sujetas a comisiones que deberas asumir
+
+                                    div.importante
+                                        p.titulo Importante
+                                        p.mensaje Si tienes alguna consulta no dudes en comunicarte con nosotros
+
+
+                        tr
+                            td
+                                div.footer
+                                    div.firma
+                                        p="EL EQUIPO DE "+ datosEmail.nombreComercial
+                                        p=datosEmail.urlPlataforma
+                                        p="T. "+datosEmail.telefono
+                                        p=datosEmail.emailTransacciones
+                                        p=datosEmail.direccion
+
+                                    
+                

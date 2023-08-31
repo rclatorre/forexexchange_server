@@ -1,0 +1,52 @@
+  
+doctype html
+html(lang="es")
+  head 
+    meta(charset="UTF-8")
+    title Cancelación de Transacción
+    style   
+        include ./style.css
+ 
+  body.color-secondary
+    div.center
+        div.body
+            div.container
+                table(style='width:100%')
+                    tbody
+                        tr
+                            td
+                                div.header
+                                    div.img
+                                        - var img = datosEmail.rutaLogotipos+'logo.png'
+                                        img.logo(src=img)
+                        tr
+                            td
+                                div.contenido
+                                    p.saludo Estimad@ #{datosEmail.nombre},
+
+                                    p.mensaje='Hemos realizado la cancelación de tu transacción el: ' + moment(datosEmail.fechaHora).format("DD/MM/YYYY, h:mm:ss a") 
+                                    p.mensaje <strong>N° de Transaccion: #{datosEmail.numeroTransaccion}</strong>
+                                    p.mensaje='Te esperamos en una proxima oportunidad'
+
+                                    div.importante
+                                        p.titulo Importante
+                                        p.mensaje Esta transaccion ha sido anulada y no generara ningun cargo extra.
+                                        p.mensaje Si tienes alguna consulta no dudes en comunicarte con nosotros
+
+
+                        tr
+                            td
+                                div.footer
+                                    div.firma
+                                        p="EL EQUIPO DE "+ datosEmail.nombreComercial
+                                        p=datosEmail.urlPlataforma
+                                        p="T. "+datosEmail.telefono
+                                        p=datosEmail.emailTransacciones
+                                        p=datosEmail.direccion
+
+                                    
+                
+
+
+
+
