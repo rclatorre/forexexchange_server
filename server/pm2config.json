@@ -4,7 +4,7 @@
         "script": "./server.js",
         "env": {
               "NODE_ENV": "prod",
-              "MONGO_URI": "mongodb+srv://test:6hCw7oy5w9e0CMqo@cluster0.nkdudmn.mongodb.net/divisa_forexexchange?authSource=admin",
+              "MONGO_URI": "mongodb+srv://test:6hCw7oy5w9e0CMqo@cluster0.nkdudmn.mongodb.net/divisa_forexexchange",
               "RECAPTCHA_KEY": "6LeYTVYiAAAAAPdqOg6I7osy7rQ9Z_P0e2FugGQX",
               "emailMessageFrom": "admin@forexexchange.pe",
               "emailTransportHost": "c1332387.ferozo.com",
