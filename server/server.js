@@ -49,7 +49,7 @@ app.use(cors({ optionsSuccessStatus: 200})); //06Jun, agregado por Amil
 // Configurar cabeceras y cors
 /*
 app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', 'https://moneyhouse.com.pe');
+  res.header('Access-Control-Allow-Origin', 'https://forexexchange.pe');
   res.header('Access-Control-Allow-Headers', 'Authorization, X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Allow-Request-Method');
   res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
   res.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');

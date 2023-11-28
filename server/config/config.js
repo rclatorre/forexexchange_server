@@ -32,7 +32,7 @@ process.env.SEED_TOKEN = process.env.SEED_TOKEN || 'este-seed-es-de-divisa-2020'
 let urlDB;
 
 if (process.env.NODE_ENV === 'dev') {
-    urlDB = 'mongodb+srv://test:6hCw7oy5w9e0CMqo@cluster0.nkdudmn.mongodb.net/divisa_moneyhouse?authSource=admin'; //&replicaSet=Cluster0-shard-0&readPreference=primary&ssl=true
+    urlDB = 'mongodb+srv://test:6hCw7oy5w9e0CMqo@cluster0.nkdudmn.mongodb.net/divisa_forexexchange?authSource=admin'; //&replicaSet=Cluster0-shard-0&readPreference=primary&ssl=true
 } else {
     urlDB = process.env.MONGO_URI;
 }
@@ -63,13 +63,13 @@ process.env.URLFront = process.env.URLFront || 'http://localhost:8100';
 //==============================================================================
 //Configuracion de cliente email, se usa en los envio de correo electronico PUG
 //==============================================================================
-process.env.emailMessageFrom = process.env.emailMessageFrom || "info@moneyhouse.com.pe";
-process.env.emailTransportHost = process.env.emailTransportHost || "c1661503.ferozo.com"; //"email-smtp.us-east-1.amazonaws.com"; //"c2450977.ferozo.com";
+process.env.emailMessageFrom = process.env.emailMessageFrom || "admin@forexexchange.pe";
+process.env.emailTransportHost = process.env.emailTransportHost || "c1332387.ferozo.com"; //"email-smtp.us-east-1.amazonaws.com"; //"c2450977.ferozo.com";
 process.env.emailTransportPort =process.env.emailTransportPort ||  465; 
 process.env.emailTransportSecure =process.env.emailTransportSecure ||  true; 
 process.env.emailTransportAuthType = process.env.emailTransportAuthType || "login"; 
-process.env.emailTransportAuthTUser = process.env.emailTransportAuthTUser || "info@moneyhouse.com.pe"
-process.env.emailTransportAuthTPass = process.env.emailTransportAuthTPass || "Mnyhs2022@2"; //"BNKa/Z6skPcWkgFT9XK2VtK+zgzWNtiMBI44ZHCli6Tb"; // "Oporto12qa2022";
+process.env.emailTransportAuthTUser = process.env.emailTransportAuthTUser || "admin@forexexchange.pe"
+process.env.emailTransportAuthTPass = process.env.emailTransportAuthTPass || "Rbrtltrr@1"; //"BNKa/Z6skPcWkgFT9XK2VtK+zgzWNtiMBI44ZHCli6Tb"; // "Oporto12qa2022";
 process.env.emailTransportTlsRejectUnauthorized =process.env.emailTransportTlsRejectUnauthorized ||  false;
 process.env.emailViewsRoot = process.env.emailViewsRoot || "server/services/email/templates/";
 
@@ -84,6 +84,6 @@ process.env.serverOptionsCert = process.env.serverOptionsCert || '/etc/letsencry
 //Configuracion de integracion con cuantoestaeldolar.pe
 //=============================================
 process.env.ACUANTOESTAELDOLAR_URL_BASE = process.env.ACUANTOESTAELDOLAR_URL_BASE || 'https://api.cuantoestaeldolar.pe/Api/Dolar';
-process.env.ACUANTOESTAELDOLAR_USUARIO = process.env.ACUANTOESTAELDOLAR_USUARIO || 'update@moneyhouse.com.pe';
-process.env.ACUANTOESTAELDOLAR_PASSWORD = process.env.ACUANTOESTAELDOLAR_PASSWORD || 'QazBpu646T3';
+process.env.ACUANTOESTAELDOLAR_USUARIO = process.env.ACUANTOESTAELDOLAR_USUARIO || 'update@forex.......com.pe';
+process.env.ACUANTOESTAELDOLAR_PASSWORD = process.env.ACUANTOESTAELDOLAR_PASSWORD || 'Qaxxxxxx';
 
